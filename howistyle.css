@@ -1,0 +1,18 @@
+.profile{
+width: 30%;
+}
+.profile img{
+	
+	width: 100%;
+	height: auto;
+}
+.about{
+	width:70%;
+}
+
+@media screen and (max-width: 768px){
+	.containeer .row {
+		display: block;
+		background-color: black !important;
+	}
+}
