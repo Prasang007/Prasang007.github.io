@@ -1,5 +1,12 @@
+body{
+	background: url('horizontal.jpg') ;
+	background-size: cover;
+}
 .profile{
 width: 30%;
+}
+.intro{
+	width:100%; text-align:center;color:whitesmoke;font-size:50px;font-family:'Cooper Black';
 }
 .profile img{
 	
@@ -9,10 +16,41 @@ width: 30%;
 .about{
 	width:70%;
 }
+.name {
+	width: 100%;
+}
+.name h1{
+	font-size: 1.7em;
+}
+.row {
+	display: flex;
+	background-color: rgba(29, 28, 28, 0.73);
+	color: whitesmoke;
+	border: 1px solid rgba(221, 207, 207, 0.336);
+}
+.container .profile{
+	margin-left: 10vw;
+	padding-right: 10px ;
+}
+.container .about{
+	margin-right: 10vw;
+	padding-left: 10px ;
+}
 
-@media screen and (max-width: 768px){
-	.containeer .row {
-		display: block;
-		background-color: black !important;
-	}
+@media screen and (max-width: 768px) {
+  .row{
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+  }
+  .container>div{
+	  margin-right: 0 !important;
+	  margin-left: 0 !important;
+  }
+  .name{
+	text-align: center;
+  }
+  .intro{
+	  font-size: 30px;
+  }
 }
